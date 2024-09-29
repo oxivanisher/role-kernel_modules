@@ -2,7 +2,7 @@
 - name: Deploy kernel modules config
   ansible.builtin.template:
     src: ansible.conf.jinja2
-    dest: /etc/
+    dest: /etc/modprobe.d/ansible.conf
     owner: root
     group: root
     mode: "0644"
