@@ -1,0 +1,8 @@
+---
+- name: Deploy kernel modules config
+  ansible.builtin.template:
+    src: ansible.conf.jinja2
+    dest: /etc/
+    owner: root
+    group: root
+    mode: "0644"
