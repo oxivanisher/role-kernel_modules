@@ -1,5 +1,6 @@
 kernel_modules
 ==============
+[![Ansible Lint](https://github.com/oxivanisher/role-kernel_modules/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/oxivanisher/role-kernel_modules/actions/workflows/ansible-lint.yml)
 
 At the current state, this module only supports denylisting modules. The name of the role was choosen to possibly support module configurations in the future
 
