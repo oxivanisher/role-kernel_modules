@@ -1,9 +1,7 @@
 kernel_modules
 ==============
 
-At the current state, this module only supports blacklisting modules. The name of the role was choosen to:
-* Support for possible renaming of `blacklisting` in the future
-* Possibly support module configurations in the future
+At the current state, this module only supports denylisting modules. The name of the role was choosen to possibly support module configurations in the future
 
 This role does not automatically reboot the system to activate the changes.
 
@@ -12,9 +10,9 @@ As always: Use at your own risk!
 Role Variables
 --------------
 
-| Name                     | Comment                                                          | Default value |
-|--------------------------|------------------------------------------------------------------|---------------|
-| kernel_modules_blacklist | A list of modules to be blacklisted (aka not loaded during boot) | `[]`          |
+| Name                    | Comment                                                          | Default value |
+|-------------------------|------------------------------------------------------------------|---------------|
+| kernel_modules_denylist | A list of modules to be denylist  (aka not loaded during boot) | `[]`          |
 
 Example Playbook
 ----------------

@@ -1,6 +1,6 @@
 # {{ ansible_managed }}
 
 # Blacklisted modules (those are not loaded)
-{% for module in kernel_modules_blacklist %}
+{% for module in kernel_modules_denylist %}
 blacklist {{ module }}
 {% endfor %}
